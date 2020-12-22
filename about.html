@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Smartin Company</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="A Website With Random Ideas">
+  <meta name="keywords" content="My Website">
+  <meta name="author" content="Martin Onyimba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="web-container">
+  <header class="home-background">
+    <p>Smartin Company</p>
+  </header>
+  <!--Navigation Link-->
+  <nav class="navbar">
+    <div class="burger-menu" id="hamburger">
+      <div class="burger-menu__line burger-menu__line--top"></div>
+      <div class="burger-menu__line burger-menu__line--middle"></div>
+      <div class="burger-menu__line burger-menu__line--bottom"></div>
+    </div>
+    <ul class="navbar__list navbar-closed" id="navbar-list">
+      <li class="navbar__item"><a class="navbar__link" href="index.html">Home</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="about.html">About Me</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="contact.html">Contact</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="posessions.html">Posessions & Projects</a></li>   
+      <li class="navbar__item"><a class="navbar__link" href="#">Web Development</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="html.html">HTML</a></li>
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="css.html">CSS</a></li>
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="javascript.html">Javascript</a></li>
+        </ul>
+      </li>   
+    </ul>
+  </nav> 
+  <main class="profile-container">
+  <header class="profile-template">
+    <h2>About</h2>
+      <p>Hi my name is Martin and I am born in the United States. I have always like computers and planned on making 
+        games, websites and animations when I grow up as well as becoming a programmer.
+      </p>
+  </header>
+  <div class="profile-template-2">
+    <h2>Profile Picture</h2>
+      <p><strong>Name:</strong> Martin Somtochukwu Onyimba</p>
+      <p><strong>Date of Birth:</strong> August 29, 2003</p>
+      <p><strong>Born:</strong> United States Of America</p>
+      <!--Will decrease width of img after learning responsive for now I let it span across yellow template-->
+      <img src="images/Martin_Onyimba.jpg" alt="A picture of myself Martin Onyimba" width="419" height="250">
+  </div>     
+  <aside class="profile-template-3">
+    <h2>Programming languages I have used:</h2>
+    <ul>
+      <li>Javascript</li>
+      <li>Python</li>
+      <li>Scratch</li>
+      <li>Ruby</li>
+      <li>C#</li>
+      <li>C++</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>PHP</li>
+      <li>Java</li>
+      <li>Processing</li>
+    </ul>
+  </aside>
+  <aside class="profile-template-4">    
+    <h2>Engines I have used:</h2>
+    <ul>
+      <li>Unity</li>
+      <li>Gamemaker</li>
+      <li>Microsoft VS Code</li>
+      <li>Sublime Text</li>
+      <li>Notepad</li>
+      <li>Adobe Photoshop</li>
+      <li>Repl.it</li>
+      <li>CodePen</li>
+    </ul>
+  </aside>
+  <section class="profile-template-5">
+    <h2>Why I chose this project and career</h2>
+    <p>I chose this project because I wanted to practice my coding skills plus I love to make games, code, 
+    make animations and website and pursue my dreams to make them come true.
+    </p>
+  </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; <span id="current-year">2020</span> Smartin Company</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

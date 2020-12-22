@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Smartin Company</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="description" content="A Website With Random Ideas">
+  <meta name="keywords" content="My Website">
+  <meta name="author" content="Martin Onyimba">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="web-container">
+  <header class="home-background">
+    <p>Smartin Company</p>
+  </header>
+  <!--Navigation Link-->
+  <nav class="navbar">
+    <div class="burger-menu" id="hamburger">
+      <div class="burger-menu__line burger-menu__line--top"></div>
+      <div class="burger-menu__line burger-menu__line--middle"></div>
+      <div class="burger-menu__line burger-menu__line--bottom"></div>
+    </div>
+    <ul class="navbar__list navbar-closed" id="navbar-list">
+      <li class="navbar__item"><a class="navbar__link" href="index.html">Home</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="about.html">About Me</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="contact.html">Contact</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="posessions.html">Posessions & Projects</a></li>   
+      <li class="navbar__item"><a class="navbar__link" href="#">Web Development</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="html.html">HTML</a></li>
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="css.html">CSS</a></li>
+          <li class="dropdown-content-list"><a class="dropdown-content-link" href="javascript.html">Javascript</a></li>
+        </ul>
+      </li>   
+    </ul>
+  </nav> 
+  <!--Main Content-->
+  <main class="main-content">
+  <!--Removed the class in article-->
+    <article>
+      <h1 class="heading">HTML</h1>
+      <p>HTML meaning HyperText Markup Language is a markup language that is used on browsers mainly for creating websites.</p>
+      <!--Table of Contents--> 
+      <div class="content-wrapper"><span class="content-heading">Contents</span>
+        <nav class="content-overflow">
+          <table class="content-table">
+            <tr><td class="content-td"><a class="content-link" href="#Paragraphs">Paragraphs</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Headings">Headings</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Breaks">Breaks</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Lists">Lists</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Links">Links</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Semantics">Semantics</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Images">Images</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Tables">Tables</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Forms">Forms</a></td></tr>
+            <tr><td class="content-td"><a class="content-link" href="#Computercode">Computercode</a></td></tr>
+          </table>
+        </nav>
+      </div> 
+      <!--Article-->
+      <section class="html-sections">  
+        <h2 id="Paragraphs">Paragraphs</h2>
+          <p>The <strong>&lt;p&gt;</strong> tags are used for placing paragraphs into your browser</p>
+        <h3>Paragraph Example<br></h3>
+        <div class="html-code-template">
+          <p><strong>&lt;p&gt;</strong>This is an inline paragraph<strong>&lt;/p&gt;</strong></p>
+          <p><strong>&lt;p&gt;</strong><br>
+            This is indeed the paragraph that spans on multi lines about my favorite time of year Christmas. Christmas is the best time of the year because
+            it is the season of giving and getting and we all love gifts and Santa right :D Some may believe in him :) and some won't :( but it 
+            is what it is I guess :{<br><strong>&lt;/p&gt;</strong>  
+          </p>
+        </div>
+      </section>
+      <section class="html-sections">
+        <h2 id="Headings">Headings</h2>
+          <p>The &lt;h1-h6&gt; tags are used to place headings in your browser. They compose of six headings.<br>h1=biggest, 
+            h6=smallest
+          </p>
+          <p><b>Note:</b>DO NOT USE headings for size and boldness</p>
+        <ul class="no-style">
+          <li><strong>&lt;h1&gt;-Heading1</strong></li>
+          <li><strong>&lt;h2&gt;-Heading2</strong></li>
+          <li><strong>&lt;h3&gt;-Heading3</strong></li>
+          <li><strong>&lt;h4&gt;-Heading4</strong></li>
+          <li><strong>&lt;h5&gt;-Heading5</strong></li>
+          <li><strong>&lt;h6&gt;-Heading6</strong></li>
+        </ul>
+        <h3>Heading Examples<br></h3>
+        <div class="html-code-template">
+          <h1><strong>&lt;h1&gt;</strong>Heading 1<strong>&lt;/h1&gt;</strong></h1>
+          <h2><strong>&lt;h2&gt;</strong>Heading 2<strong>&lt;/h2&gt;</strong></h2>
+          <h3><strong>&lt;h3&gt;</strong>Heading 3<strong>&lt;/h3&gt;</strong></h3>
+          <h4><strong>&lt;h4&gt;</strong>Heading 4<strong>&lt;/h4&gt;</strong></h4>
+          <h5><strong>&lt;h5&gt;</strong>Heading 5<strong>&lt;/h5&gt;</strong></h5>
+          <h6><strong>&lt;h6&gt;</strong>Heading 6<strong>&lt;/h6&gt;</strong></h6>
+        </div>
+      </section>
+      <section class="html-sections">
+        <h2 id="Breaks">Breaks</h2>
+        <h3>Line Breaks</h3>
+          <p>Line breaks <strong>&lt;br&gt;</strong> are used to break content in your HTML document to start new line</p>
+        <h3>Horizonal Rulers</h3>
+          <p>Horizontal rulers are thematic breaks used to seperate content in your website by inserting horizontal lines across your webpage.</p>
+          <p>Here are some examples of line breaks and horizontal rulers.</p>
+          <p>No line break</p>
+          <p>Line<br>break</p>
+          <hr>
+      </section>
+      <section class="html-sections">
+        <h2 id="Lists">Lists</h2>
+          <p>The <strong>&lt;li&gt;</strong> tags are used to place lists in your browser.</p>
+        <h3>Unordered Lists</h3>
+          <p>Unordered lists <strong>&lt;ul&gt;</strong> uses bullets to place your list items <strong>&lt;li&gt;</strong>.</p>
+          <ul>
+            <li>Unordered</li>
+            <li>Lists</li>
+          </ul>
+        <h3>Ordered Lists</h3>
+          <p>Ordered lists <strong>&lt;ol&gt;</strong> uses numbers to place your list items <strong>&lt;li&gt;</strong>.</p> 
+          <ol>
+            <li>Ordered</li>
+            <li>Lists</li>
+          </ol> 
+        <h3>List Items</h3> 
+          <p>List items you saw for the ul and ol are basically the list for those ul and ol containers.</p>
+        <!--Description List Section-->
+        <h3>Description Lists</h3>
+          <p>A description list <strong>&lt;dl&gt;</strong> is used to create a description list with terms and definitions.</p>
+        <h3>Description Terms</h3>
+          <p>A description term <strong>&lt;dt&gt;</strong> is the list name given to each part of the list.</p>
+        <h3>Description Definition</h3>
+          <p>A description definition <strong>&lt;dd&gt;</strong>is used to define and describe each term in your description list.</p>
+          <p>Here is an example of dl, dd and dt with code and no code</p>
+        <div class="dl-parent">
+        <div class="dl-child">
+          <dl>
+          <strong>&lt;dl&gt;</strong>
+            <dt><strong>&lt;dt&gt;</strong>Description List<strong>&lt;/dt&gt;</strong></dt>
+            <dd><strong>&lt;dd&gt;</strong> Defines a list of descriptions<strong>&lt;/dd&gt;</strong></dd>
+            <dt><strong>&lt;dt&gt;</strong>Description Term<strong>&lt;/dt&gt;</strong></dt>
+            <dd><strong>&lt;dd&gt;</strong>Defines a term in the list<strong>&lt;/dd&gt;</strong></dd>
+            <dt><strong>&lt;dt&gt;</strong>Description Definition<strong>&lt;/dt&gt;</strong></dt>
+            <dd><strong>&lt;dd&gt;</strong>Defines the term given to the list<strong>&lt;/dd&gt;</strong></dd>
+          <strong>&lt;/dl&gt;</strong>
+          </dl>
+        </div>
+        <div class="dl-child2">
+          <dl>
+            <dt>Description List</dt>
+            <dd>Defines a list</dd>
+            <dt>Description Term</dt>
+            <dd>Defines a term in list</dd>
+            <dt>Description Defintion</dt>
+            <dd>Defines the description for the term in list</dd>
+          </dl>
+        </div>
+        </div>
+      </section>
+      <section class="html-sections">
+      <h2 id="Links">Links</h2>
+        <p>The <strong>&lt;a&gt;</strong> tag is used to create links that connect to other webpages or files.<br> A tags must have the href attribute in order to create links to work otherwise it won't know where to go.</p>
+        <br>
+        <!--Overflowed Content-->
+        <p>Here is an example of an a tag that links to google.
+        <br>
+          <strong>&lt;a href="https://www.google.com"&gt;<a href="https://www.google.com/">google.com</a>&lt;/a&gt;</strong>
+        </p>
+      </section>
+      <section class="html-sections">
+        <h2 id="Semantics">Semantics</h2>
+          <p>Semantic tags are tags that basically do nothing to affect the website but can be used as containers for your webpage so it could be styled better for later.</p>
+          <!--Table of semantics-->
+          <table class="semantic-table">
+            <tr class="semantic-tr"><th class="semantic-th" colspan="2">List of Semantics</th></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;div&gt;</td>
+            <td class="semantic-td">Defines a divider as a container</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;span&gt;</td>
+            <td class="semantic-td">Defines an inline container for representing and marking up content</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;nav&gt;</td>
+            <td class="semantic-td">Defines a set of navigation links as a container</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;section&gt;</td>
+            <td class="semantic-td">Defines a section in a webpage used as a container</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;article&gt;</td>
+            <td class="semantic-td">Defines an article used in webpage as a containter</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;header&gt;</td>
+            <td class="semantic-td">Defines header used as a container to introduce your webpage or section</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;footer&gt;</td>
+            <td class="semantic-td">Defines footer used as a container to conclude your webpage or section</td></tr>
+            <tr class="semantic-tr"><td class="semantic-td">&lt;aside&gt;</td>
+            <td class="semantic-td">Defines content that is set aside of a webpage used as a sidebar</td></tr>
+          </table>
+      </section>
+      <section class="html-sections">
+      <h2 id="Images">Images</h2>
+        <p>In order to create images we use the <code class="reserved-keyword">img</code> tag with the <code class="reserved-keyword">src</code> attribute and for accessability we use the <code class="reserved-keyword">alt</code> tag.
+        You can also adjust the width and height of the image using the <code class="reserved-keyword">width</code> and <code class="reserved-keyword">height</code> attributes.
+        </p>
+          <dl>
+            <dt>img</dt>
+            <dd>creates an image</dd>
+            <dt>src</dt>
+            <dd>defines the source of the image</dd>
+            <dt>alt</dt>
+            <dd>used for accessability to identify the image to a blind or deaf person</dd>
+            <dt>width</dt>
+            <dd>adjust the width of the image</dd>
+            <dt>height</dt>
+            <dd>adjust the height of an image</dd>
+          </dl>
+      <img src="images/extreme-planets-in-space.jpg" alt="A picture of space with the planets" width="600">
+      </section>
+      <section class="html-sections">
+      <h2 id="Computercode">Computercode</h2>
+        <h3>&lt;kbd&gt;</h3>
+        <p>The kbd element is used to define keyboard input: <b>Note:</b> Don't use kbd for changing font-family style.</p>
+        <h4>Copy, Cut, Paste</h4>
+        <p>To copy press <kbd>Ctrl + C</kbd>, to cut press <kbd>Ctrl + X</kbd> and to paste press <kbd>Ctrl + V</kbd></p>
+      </section>
+    </article>
+  </main>
+  <div class="pagination">
+    <span class="page-number"><a href="#">1</a></span>
+    <span class="page-number"><a href="#">2</a></span>
+    <span class="page-number"><a href="#">3</a></span>
+  </div>
+  <footer class="footer">
+    <p>&copy; <span id="current-year">2020</span> Smartin Company</p>
+  </footer>
+  <script src="script.js"></script>   
+</body>
+</html>
