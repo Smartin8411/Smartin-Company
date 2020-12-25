@@ -428,58 +428,73 @@
 }
 
 /*About Me Profile Page w/ Grid Templates*/
+/*Grid Template Wrapper*/
 .profile-container {
     display: grid;
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    grid-gap: 3px;
 }
 
-.profile-container h2,p {
-    margin-left: 8px;
-}
-
+.profile-container h2,p { margin-left: 8px; }
+    
 .profile-container li {
     list-style-type: none;
     font-size: 1.25em;
 }
 
+/*Header Wrapper*/
 .profile-template {
     background-color: #abcdef;
     grid-column: 1/4;
     grid-row: 1/1;
 }
-
+/*Div Wrapper*/
 .profile-template-2 {
     background-color: #deca55;
     grid-column: 2/3;
     grid-row: 2/4;
 }
 
+.profile-template-2 img { width: 100%; }
+    
+/*Aside2 Wrapper*/
 .profile-template-3 {
     background-color: #05b8ff;
     grid-column: 3/4;
-    grid-row: 2/7;
+    grid-row: 2/6;
 }
-
+/*Aside Wrapper*/
 .profile-template-4 {
     background-color: #490dec;
     grid-column: 1/2;
-    grid-row: 2/7;
+    grid-row: 2/6;
 }
-
+/*Section Wrapper*/
 .profile-template-5 {
     background-color: #01ff01;
     grid-column: 2/3;
-    grid-row: 4/7;
+    grid-row: 4/6;
 }
 
-.profile-template,.profile-template-2,.profile-template-3,.profile-template-4,.profile-template-5 {
-    border: 1px solid black;
-}
-
-@media only screen and (max-width: 795px){
-
+@media only screen and (max-width: 824px){
+    .profile-container {
+        display: grid;
+        grid-gap: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        grid-template-areas: 'header header header'
+        'aside2 div div'
+        'aside section section';
+      }
+      
+      .profile-template { background-color: #abcdef; grid-area: header; }
+      .profile-template-2 { background-color: #deca55; grid-area: div; }
+      .profile-template-3 { background-color: #05b8ff; grid-area: aside2; }
+      .profile-template-4 { background-color: #490dec; grid-area: aside; }
+      .profile-template-5 { background-color: #01ff01; grid-area: section; }
+    
 }
 
 /*Contact Form Page*/
