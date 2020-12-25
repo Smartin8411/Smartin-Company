@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .web-container {
     max-width: 1281px;
     margin: auto;
@@ -434,11 +438,9 @@
     grid-template-rows: auto 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    grid-gap: 3px;
 }
 
-.profile-container h2,p { margin-left: 8px; }
+.profile-container h2,p { margin-left: 8px;}
     
 .profile-container li {
     list-style-type: none;
@@ -458,7 +460,10 @@
     grid-row: 2/4;
 }
 
-.profile-template-2 img { width: 100%; }
+.profile-template-2 img { 
+    width: 100%;
+    height: auto;
+}
     
 /*Aside2 Wrapper*/
 .profile-template-3 {
@@ -479,21 +484,23 @@
     grid-row: 4/6;
 }
 
-@media only screen and (max-width: 824px){
+@media only screen and (max-width: 795px){
     .profile-container {
-        display: grid;
-        grid-gap: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         grid-template-areas: 'header header header'
         'aside2 div div'
         'aside section section';
       }
       
-      .profile-template { background-color: #abcdef; grid-area: header; }
-      .profile-template-2 { background-color: #deca55; grid-area: div; }
-      .profile-template-3 { background-color: #05b8ff; grid-area: aside2; }
-      .profile-template-4 { background-color: #490dec; grid-area: aside; }
-      .profile-template-5 { background-color: #01ff01; grid-area: section; }
+      .profile-template { grid-area: header; }
+      .profile-template-2 { grid-area: div; }
+      .profile-template-3 { grid-area: aside2; }
+      .profile-template-4 { grid-area: aside; }
+      .profile-template-5 { grid-area: section; }
+    
+    .profile-container h2,p{
+        margin-left: 2px;
+    }
+
     
 }
 
@@ -517,6 +524,12 @@ input, label, textarea {
     border-radius: 5px;
     border: none;
     font-size: 1.75em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 50px;
 }
 
 /*Changes outline color for input:focus*/
