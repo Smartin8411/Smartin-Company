@@ -501,7 +501,9 @@ html {
         margin-left: 2px;
     }
 
-    
+    .profile-container li {
+        color: brown;
+    }
 }
 
 /*Contact Form Page*/
@@ -543,7 +545,30 @@ input, label, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 20px 0;
+    padding: 0px 0;
+}
+
+#searchbar_container {
+    background-color: #3473fc;
+    width: 100%;
+    height: 60px;
+}
+
+#searchbar_form {
+    float: right;
+    background-color: white;
+    border: 2px solid black;
+    height: 50px;
+    margin: 5px;
+    padding: 0 5px 0 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#searchbar_form input {
+    border-radius: 10px;
+    font-size: 24px;
 }
 
 .projects {
@@ -558,11 +583,13 @@ input, label, textarea {
     position: relative;
 }
 
-/*.projects span {
-    border-top: 1px solid black;
+.projects span {
     position: absolute;
     bottom: 0px;
-}*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: verdana;
+}
 
 /*Footer*/
 .footer {
