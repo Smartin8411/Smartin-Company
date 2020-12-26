@@ -545,7 +545,7 @@ input, label, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 0px 0;
+    padding: 0px;
 }
 
 #searchbar_container {
@@ -579,15 +579,17 @@ input, label, textarea {
     margin: 10px 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    text-align: center;
     position: relative;
 }
 
+.project-name_container {
+    border-top: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .projects span {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: verdana;
 }
 
