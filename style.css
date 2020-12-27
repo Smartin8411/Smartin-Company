@@ -584,6 +584,11 @@ input, label, textarea {
     background-color: #ffffff;
 }
 
+.project-clickable {
+    text-decoration: none;
+    color: initial;
+}
+
 .project-name_container {
     border-top: inherit;
     display: flex;
