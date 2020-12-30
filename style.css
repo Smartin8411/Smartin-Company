@@ -485,6 +485,7 @@ html {
 }
 
 @media only screen and (max-width: 795px){
+
     .profile-container {
         grid-template-areas: 'header header header'
         'aside2 div div'
@@ -504,6 +505,7 @@ html {
     .profile-container li {
         color: brown;
     }
+    
 }
 
 /*Contact Form Page*/
@@ -591,14 +593,18 @@ input, label, textarea {
 .project-name_container {
     border-top: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     top: 85%;
 }
 
-.projects span {
+.project-name_container span {
     font-family: verdana;
-    padding: 10px 0;
+    padding: 10px;
+}
+
+.project-name_container span:first-child{
+    border-right: 2px solid black;
 }
 
 /*Footer*/
