@@ -122,6 +122,7 @@
     border: inherit;
     width: 100px;
     height: 100px;
+    transition: .5s;
 }
 
 .red-light {
