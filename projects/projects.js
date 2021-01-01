@@ -15,8 +15,8 @@ function currentTime() {
   setupRotation(hourHand, hours);
 }
 
-function setupRotation(element, rotationRatio) {
-  element.style.setProperty('--rotation', rotationRatio * 360);
+function setupRotation(element, rotateRatio) {
+  element.style.setProperty('--rotation', rotateRatio * 360);
 }
 
 currentTime();
