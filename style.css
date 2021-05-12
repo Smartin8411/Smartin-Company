@@ -109,7 +109,7 @@ html {
 
 /*Responsive Navbar & Burger-Menu*/
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 772px) {
     
     .burger-menu {
         display: flex;
@@ -533,7 +533,7 @@ html {
     border: 4px solid var(--bgcolor)
 }
 
-input, label, textarea {
+.contact-form input, .contact-form label, .contact-form textarea {
     margin: 10px;
 }
 
